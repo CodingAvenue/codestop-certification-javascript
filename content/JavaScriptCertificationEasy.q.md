@@ -864,4 +864,49 @@ What is the output of the given code?
 :::
 
 
+/// type=MS, answer=[1,3], difficulty=easy
+
+What are the differences between classical and prototypal inheritances?
+
+ - In classical inheritance, the new instance inherits properties from a parent class. While in prototypal inheritance, the instance is instantiated using a factory function or `Object.create()`.
+
+ - In classical inheritance, the instance is instantiated using a factory function or `Object.create()`. While in prototypal inheritance, the new instance inherits properties from a parent class.
+
+ - In classical inheritance, a constructor instantiates an instance using the `new` keyword. While in prototypal inheritance, an instance is created by cloning an existing object that serves as a prototype.
+
+ - In classical inheritance, an instance is created by cloning an existing object that serves as a prototype. While in prototypal inheritance, a constructor instantiates an instance using the `new` keyword.
+
+ - Classical inheritance invokes a function with a given `this` value and arguments provided one by one. While prototypal inheritance returns a new function, allowing you to pass any number of arguments.
+
+
+/// type=MS, answer=[3,4,5], difficulty=easy
+
+Which statements make an object non-extensible?
+
+ - `Object.isExtensible(newObject);`
+
+ - `Object.getPrototypeOf(newObject);`
+
+ - `var sealedObject = Object.seal({});`
+
+ - `Object.preventExtensions(newObject);`
+
+ - `var frozenObject = Object.freeze({})`
+
+
+/// type=MS, answer=[1,4], difficulty=easy
+
+What are the differences between `window` and `document`?
+
+ - A `window` is a javascript global object while a `document` is a property of the `window` object.
+
+ - A `window` is a property of the `window` object while a `document` is a javascript global object.
+
+ - A `window` represents the DOM of the page while a `document` represents the written or generated HTML markup.
+
+ - A `window` has everything including global functions, locations, history, web components, and more. While, a `document` has methods to traverse the DOM like `getElementById`, `querySelector`, `removeChild`, and more.
+
+ - A `window` has methods to traverse the DOM like `getElementById`, `querySelector`, `removeChild`, and more. While, a `document` has everything including global functions, locations, history, web components, and more.
+
+
 +++
