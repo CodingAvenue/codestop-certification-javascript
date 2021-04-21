@@ -921,4 +921,306 @@ What is the output of the given code?
 :::
 
 
+/// type=CR, answer=[tests/JavaScriptCertification/DisplayPascalsTriangleTest.js], difficulty=moderate
+
+Given a non-negative integer `n`, write a program the generates the first `n` rows of the Pascal's triangle. 
+
+```javascript
+// Add your code here...
+
+
+
+
+```
+
+
+/// type=CR, answer=[tests/JavaScriptCertification/CalculateGeoSumTest.js], difficulty=moderate
+
+A Geometric series is a series with a constant ratio between successive terms. The first term of the series is denoted by `a` and the common ratio is denoted by `r`. The series looks like this: `a`, `ar`, `ar^2`, `ar^3`, `ar^4`, and so on. Write a program that calculates the sum of a geometric series.
+
+```javascript
+// Add your code here...
+
+
+
+
+```
+
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+function Polygon(ary){
+    this.ary=ary;
+}
+
+Polygon.prototype.perimeter=function(){
+    let p=0;
+    for(let i=0; i<this.ary.length; i++){
+        p+=this.ary[i];
+    }
+    return p;
+}
+
+sides=[2,5,3,5];
+poly = new Polygon(sides);
+console.log(poly.perimeter());
+```
+/// type=SS, answer=[1], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `15`.
+
+ - It prints `false`.
+
+ - It generates a `SyntaxError`.
+
+ - It prints `Polygon { ary: [ 2, 5, 3, 5 ] }`.
+
+ - It prints `Polygon { perimeter: [Function] }`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+function Polygon(ary){
+    this.ary=ary;
+}
+
+Polygon.prototype.perimeter=function(){
+    let p=0;
+    for(let i=0; i<this.ary.length; i++){
+        p+=this.ary[i];
+    }
+    return p;
+}
+
+sides=[2,5,3,5];
+poly = new Polygon(sides);
+console.log(poly.__proto__);
+```
+/// type=SS, answer=[5], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `15`.
+
+ - It prints `false`.
+
+ - It generates a `SyntaxError`.
+
+ - It prints `Polygon { ary: [ 2, 5, 3, 5 ] }`.
+
+ - It prints `Polygon { perimeter: [Function] }`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+function Polygon(ary){
+    this.ary=ary;
+}
+
+Polygon.prototype.perimeter=function(){
+    let p=0;
+    for(let i=0; i<this.ary.length; i++){
+        p+=this.ary[i];
+    }
+    return p;
+}
+
+sides=[2,5,3,5];
+poly = new Polygon(sides);
+console.log(poly.hasOwnProperty());
+```
+/// type=SS, answer=[2], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `15`.
+
+ - It prints `false`.
+
+ - It generates a `SyntaxError`.
+
+ - It prints `Polygon { ary: [ 2, 5, 3, 5 ] }`.
+
+ - It prints `Polygon { perimeter: [Function] }`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+function Polygon(ary){
+    this.ary=ary;
+}
+
+Polygon.prototype.perimeter=function(){
+    let p=0;
+    for(let i=0; i<this.ary.length; i++){
+        p+=this.ary[i];
+    }
+    return p;
+}
+
+sides=[2,5,3,5];
+poly = new Polygon(sides);
+console.log(poly);
+```
+/// type=SS, answer=[4], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `15`.
+
+ - It prints `false`.
+
+ - It generates a `SyntaxError`.
+
+ - It prints `Polygon { ary: [ 2, 5, 3, 5 ] }`.
+
+ - It prints `Polygon { perimeter: [Function] }`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+Person.prototype.eat = function () {
+    console.log(`${this.name} is eating.`);
+};
+
+Person.prototype.sleep = function () {
+    console.log(`${this.name} is sleeping.`);
+};
+
+Person.prototype.walk =function () {
+    console.log(`${this.name} is walking.`);
+};
+
+ana = new Person("Ana",20);
+console.log(ana.__proto__);
+```
+/// type=SS, answer=[5], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `false`.
+
+ - It produces an error.
+
+ - It prints `Ana is eating.`.
+
+ - It prints `Person { name: 'Ana', age: 20 }`.
+
+ - It prints `Person { eat: [Function], sleep: [Function], walk: [Function] }`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+Person.prototype.eat = function () {
+    console.log(`${this.name} is eating.`);
+};
+
+Person.prototype.sleep = function () {
+    console.log(`${this.name} is sleeping.`);
+};
+
+Person.prototype.walk =function () {
+    console.log(`${this.name} is walking.`);
+};
+
+ana = new Person("Ana",20);
+console.log(ana);
+```
+/// type=SS, answer=[4], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `false`.
+
+ - It produces an error.
+
+ - It prints `Ana is eating.`.
+
+ - It prints `Person { name: 'Ana', age: 20 }`.
+
+ - It prints `Person { eat: [Function], sleep: [Function], walk: [Function] }`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+Person.prototype.eat = function () {
+    console.log(`${this.name} is eating.`);
+};
+
+Person.prototype.sleep = function () {
+    console.log(`${this.name} is sleeping.`);
+};
+
+Person.prototype.walk =function () {
+    console.log(`${this.name} is walking.`);
+};
+
+ana = new Person("Ana",20);
+console.log(ana.hasOwnProperty());
+```
+/// type=SS, answer=[1], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `false`.
+
+ - It produces an error.
+
+ - It prints `Ana is eating.`.
+
+ - It prints `Person { name: 'Ana', age: 20 }`.
+
+ - It prints `Person { eat: [Function], sleep: [Function], walk: [Function] }`.
+
+:::
+
+
 +++
