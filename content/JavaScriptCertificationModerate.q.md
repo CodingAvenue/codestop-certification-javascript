@@ -957,7 +957,7 @@ function Polygon(ary){
     this.ary=ary;
 }
 
-Polygon.prototype.perimeter=function(){
+Polygon.prototype.perimeter = function(){
     let p=0;
     for(let i=0; i<this.ary.length; i++){
         p+=this.ary[i];
@@ -995,7 +995,7 @@ function Polygon(ary){
     this.ary=ary;
 }
 
-Polygon.prototype.perimeter=function(){
+Polygon.prototype.perimeter = function(){
     let p=0;
     for(let i=0; i<this.ary.length; i++){
         p+=this.ary[i];
@@ -1033,7 +1033,7 @@ function Polygon(ary){
     this.ary=ary;
 }
 
-Polygon.prototype.perimeter=function(){
+Polygon.prototype.perimeter = function(){
     let p=0;
     for(let i=0; i<this.ary.length; i++){
         p+=this.ary[i];
@@ -1071,7 +1071,7 @@ function Polygon(ary){
     this.ary=ary;
 }
 
-Polygon.prototype.perimeter=function(){
+Polygon.prototype.perimeter = function(){
     let p=0;
     for(let i=0; i<this.ary.length; i++){
         p+=this.ary[i];
@@ -1117,7 +1117,7 @@ Person.prototype.sleep = function () {
     console.log(`${this.name} is sleeping.`);
 };
 
-Person.prototype.walk =function () {
+Person.prototype.walk = function () {
     console.log(`${this.name} is walking.`);
 };
 
@@ -1158,7 +1158,7 @@ Person.prototype.sleep = function () {
     console.log(`${this.name} is sleeping.`);
 };
 
-Person.prototype.walk =function () {
+Person.prototype.walk = function () {
     console.log(`${this.name} is walking.`);
 };
 
@@ -1199,7 +1199,7 @@ Person.prototype.sleep = function () {
     console.log(`${this.name} is sleeping.`);
 };
 
-Person.prototype.walk =function () {
+Person.prototype.walk = function () {
     console.log(`${this.name} is walking.`);
 };
 
@@ -1219,6 +1219,93 @@ What is the output of the given code?
  - It prints `Person { name: 'Ana', age: 20 }`.
 
  - It prints `Person { eat: [Function], sleep: [Function], walk: [Function] }`.
+
+:::
+
+
+/// type=CR, answer=[tests/JavaScriptCertification/CorrectDogBarksTest.js], difficulty=moderate
+
+Correct the code so that it successfully prints `doggo says woof` to the console.
+
+```javascript
+function Dog (name) {
+    this.name = name;
+}
+
+Dog.bark = function () {
+    console.log(this.name + ' says woof');
+};
+
+let doggo = new Dog('doggo');
+doggo.bark();
+```
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+(function() {
+	var genericObject = {
+		bar : "Hello World",
+		get_bar : function() {
+			return this.bar;
+		}
+	};
+	var customObject = Object.create(genericObject);
+	customObject.bar = "Aloha folks!";
+	console.log(customObject.get_bar());
+})();
+```
+/// type=SS, answer=[4], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `NaN`.
+
+ - It prints `Undefined`.
+
+ - It prints `Hello World`.
+
+ - It prints `Aloha folks!`.
+
+ - It generates a `SyntaxError`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+(function() {
+	var genericObject = {
+		bar : "Hello World",
+		get_bar : function() {
+			return this.bar;
+		}
+	};
+	var customObject = Object.create(genericObject);
+	customObject.bar = "Aloha folks!";
+	delete customObject.bar;
+	console.log(customObject.get_bar()); 
+})();
+```
+/// type=SS, answer=[3], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `NaN`.
+
+ - It prints `Undefined`.
+
+ - It prints `Hello World`.
+
+ - It prints `Aloha folks!`.
+
+ - It generates a `SyntaxError`.
 
 :::
 

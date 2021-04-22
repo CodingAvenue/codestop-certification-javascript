@@ -909,4 +909,50 @@ What are the differences between `window` and `document`?
  - A `window` has methods to traverse the DOM like `getElementById`, `querySelector`, `removeChild`, and more. While, a `document` has everything including global functions, locations, history, web components, and more.
 
 
+/// type=SS, answer=[3], difficulty=easy
+
+If `Animal` is the superclass and `Mammal` is the subclass, then a subclass inheriting the superclass can be represented as _________.
+
+ - `Mammal = inherit(Animal);`
+
+ - `Mammal = Animal.inherit();`
+
+ - `Mammal.prototype = inherit(Animal);`
+
+ - `Animal.prototype = inherit(Mammal);`
+
+ - `Mammal.prototype = inherit(Animal.prototype);`
+
+
+/// type=MS, answer=[3,5], difficulty=easy
+
+Which method used to create new properties and modify the attributes of existing properties?
+
+ - `Object.inherit()`
+
+ - `Object.prototype`
+
+ - `Object.defineProperty()`
+
+ - `Object.createProperty()`
+
+ - `Object.defineProperties()`
+
+
+/// type=CR, answer=[tests/JavaScriptCertification/DisplayDoggoTest.js], difficulty=easy
+
+Correct the code so that it successfully prints `doggo` to the console.
+
+```javascript
+let dog = {
+  name: 'doggo',
+  sayName () {
+    console.log(this.name);
+  }
+};
+let sayName = dog.sayName;
+sayName();
+```
+
+
 +++
