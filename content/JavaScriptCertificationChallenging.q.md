@@ -384,4 +384,29 @@ Write a function to calculate the factorial of an arbitrary number. Name the fun
 ```
 
 
+/// type=CR, answer=[tests/JavaScriptCertification/SearchElementInRotatedArrayTest.js], difficulty=challenging
+
+Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand i.e., `0 1 2 4 5 6 7` might become `4 5 6 7 0 1 2`. Write a program that searches the given value `k` in a rotated sorted array `arr`. The program returns the index of the value `k` if it is found in an array otherwise it returns `-1`.
+
+```javascript
+// Add your code here...
+
+
+
+
+```
+
+
+/// type=CR, answer=[tests/JavaScriptCertification/SearchInsertElementInSortedArrayTest.js], difficulty=challenging
+
+Given a sorted array `arr` without duplicate elements and a value `k`, write a program that searches and inserts the specified value `k` in an array and returns its position `index` if it is found. If not, it returns the specific position `index` where the value `k` should be inserted.
+
+```javascript
+// Add your code here...
+
+
+
+
+```
+
 +++
