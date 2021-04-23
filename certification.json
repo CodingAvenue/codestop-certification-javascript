@@ -1,0 +1,59 @@
+{
+    "title": "JavaScript Certification",
+    "engine": "codingavenue/ca-school-javascript-engine:latest",
+    "description": "JavaScript Certification provides a good measure to test individuals comprehensive skills and knowledge in JavaScript for ranking and selecting candiddates for experienced JavaScript programmers. This certification also provides individuals better proof to boost their comprehensive skills and knowledge in JavaScript.",
+    "requisites": ["JavaScript Introduction", "JavaScript DOM"],
+    "audience": "Individuals who have intermediate and experienced JavaScript programming skills.",
+    "coverage": [
+        {
+            "main": "JavaScript Basics",
+            "sub": ["Variables", "Operators", "Objects", "Methods", "Properties", "Hoisting", "Conditionals", "Loops"]
+        },
+        {
+            "main": "Arrays",
+            "sub": ["Array", "Looping through objects", "hasOwnProperty", "Object.entries", "Multidimensional arrays", "Sorting", "Array Methods .map(),.splice() and more"]
+        },
+        {
+            "main": "Object-Oriented Programming",
+            "sub": ["Classes", "Prototypes", "Constructor", "Inheritance", "Instance"]
+        },
+        {
+            "main": "Error Handling",
+            "sub": ["Handling Exceptions", "Errors"]
+        },
+        {
+            "main": "Functions",
+            "sub": ["Higher-Order Functions","Arrow Functions", "Callback Functions", "Anonymous Functions", "Closures", "Scooping"]
+        },
+        {
+            "main": "Event Handlers and Listeners",
+            "sub": ["The addEventListener() Method", "On-Event Handlers", "Capturing Key Events"]
+        },
+        {
+            "main": "DOM",
+            "sub": ["Selectors","Accessing Element Nodes", "getElementByID()", "querySelectorAll()", " querySelector()", "getElementsByClassName()", "The style Property vs. getComputedStyle()"]
+        }
+    ],
+    "authors": [
+        {
+            "name": "Taylor",
+            "description": "Taylor has been programming since he was 12. He reviews the content to fix issues for the overall improvement of the course.",
+            "imagePath": "Taylor.jpg"
+        },
+        {
+            "name": "Ella",
+            "description": "Ella has taught programming courses for 12 years. She brings her teaching expertise in designing the course.",
+            "imagePath": "Ella.jpg"
+        },
+        {
+            "name": "Jerome",
+            "description": "Jerome is a web developer with a background in DevOps. He develops the proof libraries and maintains the sandbox of CodeStop.",
+            "imagePath": "Jerome.jpg"
+        },
+        {
+            "name": "Arnold",
+            "description": "Arnold is a web developer and college instructor who specializes in functional design. He designs and develops the features and functionalities of CodeStop.",
+            "imagePath": "Arnold.jpg"
+        }
+    ]
+}
