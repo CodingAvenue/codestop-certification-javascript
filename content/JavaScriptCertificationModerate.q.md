@@ -4,30 +4,6 @@
 
 ### Moderate
 
-/// type=CR, answer=[tests/JavaScriptCertification/FixStackOverflowRecursiveTest.js], difficulty=moderate
-
-The given recursive code causes a stack overflow if an array list is too large. Write a program that fixes the problem and still retains the recursive pattern?
-
-```
-var list = readHugeList();
-
-var nextListItem = function() {
-    var item = list.pop();
-
-    if (item) {
-        // process the list item...
-        nextListItem();
-    }
-};
-```
-
-```JavaScript
-// write your code here...
-
-
-```
-
-
 :::
 
 /// type=REPL, readonly=true
@@ -126,18 +102,6 @@ Why does the given code prints `5` when the user clicks on `Button 3`?
  - The value of the variable `i` is already `5` at the time the `onclick` method is invoked in any of the buttons.
 
 :::
-
-
-/// type=CR, answer=[tests/JavaScriptCertification/CreatePrivateCounterInClosureTest.js], difficulty=moderate
-
-Write a program that uses a closure to create a private counter. Create a function within an outer function that allows you to update a private variable `counter`. The variable `counter` should not be accessible from outside the function without the use of a helper function.
-
-```javascript
-// Add your code here...
-
-
-
-```
 
 
 /// type=CR, answer=[tests/JavaScriptCertification/FunctionThatPrintsAllMethodTest.js], difficulty=moderate
@@ -774,19 +738,6 @@ What is printed first to the console?
 :::
 
 
-/// type=CR, answer=[tests/JavaScriptCertification/ImplementIsEmptyFunctionTest.js], difficulty=moderate
-
-Implement the `isEmpty()` function to check if an object is empty or not using `for...in` loop and `hasOwnProperty()` method. This function should return `true` if an object is empty and `false` otherwise.
-
-```javascript
-// Add your code here...
-
-
-
-
-```
-
-
 :::
 
 /// type=REPL, readonly=true
@@ -923,7 +874,7 @@ What is the output of the given code?
 
 /// type=CR, answer=[tests/JavaScriptCertification/DisplayPascalsTriangleTest.js], difficulty=moderate
 
-Given a non-negative integer `n`, write a program the generates the first `n` rows of the Pascal's triangle. 
+Given a non-negative integer `n`, write a program that generates the first `n` rows of the Pascal's triangle. 
 
 ```javascript
 // Add your code here...

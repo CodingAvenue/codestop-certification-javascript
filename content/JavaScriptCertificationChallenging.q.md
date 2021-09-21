@@ -4,6 +4,55 @@
 
 ### Challenging
 
+/// type=CR, answer=[tests/JavaScriptCertification/FixStackOverflowRecursiveTest.js], difficulty=challenging
+
+The given recursive code causes a stack overflow if an array list is too large. Write a program that fixes the problem and still retains the recursive pattern?
+
+```
+var list = readHugeList();
+
+var nextListItem = function() {
+    var item = list.pop();
+
+    if (item) {
+        // process the list item...
+        nextListItem();
+    }
+};
+```
+
+```JavaScript
+// write your code here...
+
+
+```
+
+
+/// type=CR, answer=[tests/JavaScriptCertification/CreatePrivateCounterInClosureTest.js], difficulty=challenging
+
+Write a program that uses a closure to create a private counter. Create a function within an outer function that allows you to update a private variable `counter`. The variable `counter` should not be accessible from outside the function without the use of a helper function.
+
+```javascript
+// Add your code here...
+
+
+
+```
+
+
+/// type=CR, answer=[tests/JavaScriptCertification/ImplementIsEmptyFunctionTest.js], difficulty=challenging
+
+Implement the `isEmpty()` function to check if an object is empty or not using `for...in` loop and `hasOwnProperty()` method. This function should return `true` if an object is empty and `false` otherwise.
+
+```javascript
+// Add your code here...
+
+
+
+
+```
+
+
 /// type=CR, answer=[tests/JavaScriptCertification/PrintPrimeNumbersTest.js], difficulty=challenging
 
 Write a program that prints all primes of a given number `n` using the `Sieve of Eratosthenes` algorithm.
@@ -107,7 +156,6 @@ Given two sorted arrays of integers `arr1` and `arr2` of sizes `m` and `n` respe
 
 
 /// type=CR, answer=[tests/JavaScriptCertification/FindDuplicateElementsInArrayTest.js], difficulty=challenging
-
 
 Given an array of integers `arr` of size `n` with duplicates, write a program that finds and returns all elements that appear twice in an array. You have to create an arrow function named `findDuplicates()` with one parameter. The `findDuplicates()` function returns all elements with duplicates in an array `arr`. Note: using extra memory space is not allowed and the runtime complexity should be in `O(n)`. 
 
@@ -341,6 +389,7 @@ doggo.bark();
 
 
 ```
+
 
 /// type=CR, answer=[tests/JavaScriptCertification/CreateFactorialFunctionTest.js], difficulty=challenging
 
