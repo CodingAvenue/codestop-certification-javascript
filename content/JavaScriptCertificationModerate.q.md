@@ -9,6 +9,42 @@
 /// type=REPL, readonly=true
 
 ```javascript
+class Chameleon {
+    static colorChange(newColor) {
+        this.newColor = newColor;
+        return this.newColor;
+    }
+
+    constructor({ newColor = 'green' } = {}) {
+        this.newColor = newColor;
+    }
+}
+
+const freddie = new Chameleon({ newColor: 'purple' });
+console.log(freddie.colorChange('orange'));
+```
+/// type=SS, answer=[5], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `green`.
+
+ - It prints `orange`.
+
+ - It prints `purple`.
+
+ - It prints `undefined`.
+
+ - It produces a `TypeError`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
 var b = 1;
 function outer(){
    	var b = 2
@@ -34,6 +70,39 @@ What is the output of the given code?
  - It prints `undefined`.
 
  - It produces an error.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+const shape = {
+    radius: 10,
+    diameter() {
+        return this.radius * 2;
+    },
+    perimeter: () => 2 * Math.PI * this.radius,
+};
+
+console.log(shape.diameter());
+console.log(shape.perimeter());
+```
+/// type=SS, answer=[3], difficulty=moderate
+
+What is the output of the given code?
+
+ - It produces an error.
+
+ - It prints `20` and `63`.
+
+ - It prints `20` and `NaN`.
+
+ - It prints `NaN` and `63`.
+
+ - It prints `20` and `62.83185307179586`.
 
 :::
 
@@ -122,32 +191,6 @@ Write a program that converts an object into a list of `[key, value]` pairs.
 
 ```javascript
 // Add your code here...
-
-
-
-```
-
-
-/// type=CR, answer=[tests/JavaScriptCertification/ConvertTheGivenFunctionsIntoClosureTest.js], difficulty=moderate
-
-Convert the given code snippet into a better representation by using closures.
-
-```
-function greet(message) {
-  console.log(message);
-}
-
-function greeter(name, age) {
-  return "Say Hello to " + name + " at " + age + " years old.";
-}
-
-var message = greeter("Anna", 18);
-greet(message);
-```
-
-```javascript
-// Add your code here...
-
 
 
 
@@ -484,22 +527,6 @@ Write a function that checks the descendant of an HTML element.
 
 
 
-```
-
-
-/// type=CR, answer=[tests/JavaScriptCertification/CheckBracketBalanceTest.js], difficulty=moderate
-
-Implement the `checkBracketBalance()` function to take a string containing only curly `{}`, square `[]`, and round `()` brackets. The function should tell us if all the brackets in the string are balanced. This means that every opening bracket will have a closing one. For example, `{[]}` is balanced, but `{[}]` is not. The `checkBracketBalance()` function returns `true` if the brackets are balance and `false` otherwise.
-
-```javascript
-function checkBracketBalance(str) {
-// Add your code here...
-
-
-}
-console.log(checkBracketBalance("{[]()}" )); // true
-console.log(checkBracketBalance("{[(])}")); // false
-console.log(checkBracketBalance("{[}")); // false
 ```
 
 
@@ -1174,6 +1201,25 @@ What is the output of the given code?
 :::
 
 
+/// type=CR, answer=[tests/JavaScriptCertification/CorrectPersonGetFullNameTest.js], difficulty=moderate
+
+Correct the code so that it successfully prints `Julie Cruz` to the console.
+
+```javascript
+function Person(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+}
+
+const member = new Person('Julie', 'Cruz');
+Person.getFullName = function() {
+    return `${this.firstName} ${this.lastName}`;
+};
+
+console.log(member.getFullName());
+```
+
+
 /// type=CR, answer=[tests/JavaScriptCertification/CorrectDogBarksTest.js], difficulty=moderate
 
 Correct the code so that it successfully prints `doggo says woof` to the console.
@@ -1260,5 +1306,45 @@ What is the output of the given code?
 
 :::
 
+
+/// type=CR, answer=[tests/JavaScriptCertification/ConvertJsonObjectIntoStringTest.js], difficulty=moderate
+
+When sending data to a web server, the data has to be in a string format. Write a script that converts JSON object into a string.
+
+```javascript
+// Add your code here...
+
+
+
+
+```
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+const person = { name: 'Jane' };
+
+Object.defineProperty(person, 'age', { value: 25 });
+
+console.log(Object.keys(person));
+```
+/// type=SS, answer=[1], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `["name"]`.
+
+ - It prints `["age"]`.
+
+ - It prints `["name", "age"]`.
+
+ - It prints `{ name: "Jane", age: 25 }`.
+
+ - It generates a `SyntaxError`.
+
+:::
 
 +++

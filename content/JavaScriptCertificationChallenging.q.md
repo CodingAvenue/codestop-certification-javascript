@@ -21,7 +21,7 @@ var nextListItem = function() {
 };
 ```
 
-```JavaScript
+```javaScript
 // write your code here...
 
 
@@ -290,37 +290,6 @@ Given an unsorted array `a[]` and an element `x`, write a program that counts an
 ```
 
 
-/// type=CR, answer=[tests/JavaScriptCertification/CheckGeometricProgressionTest.js], difficulty=challenging
-
-In mathematics, a geometric progression or geometric sequence is a sequence of numbers where each term after the first is found by multiplying the previous one by a fixed, non-zero number called the common ratio. For example, the sequence `2`, `6`, `18`, `54`, and so on is a geometric progression with a common ratio `3`. Similarly, `10`, `5`, `2.5`, `1.25`, and so on is a geometric sequence with a common ratio `1/2`. Write a complete implementation of the `isGeometric()` function that accepts an array argument `arr`. The `isGeometric()` function returns a string `Geometric  sequence` if a sequence of numbers in `arr` is a geometric progression. Otherwise, it returns a string `Not a geometric sequence`.
-
-```javascript
-function isGeometric(arr)
-{
-  //add your implementation here
-
-
-}
-
-my_arr1 = [2, 6, 18, 54];
-
-console.log(isGeometric(my_arr1));
-```
-
-
-/// type=CR, answer=[tests/JavaScriptCertification/DisplayCollatzSequenceTest.js], difficulty=challenging
-
-Write a program that displays the Collatz sequence of the specified number `n`. Collatz conjecture is a conjecture in mathematics named after Lothar Collatz, who first proposed it in 1937. The conjecture is also known as the `3n + 1` conjecture. The conjecture can be summarized as follows. Take any positive integer `n`. If `n` is even, divide it by `2` to get `n / 2`. If `n` is odd, multiply it by `3` and add `1` to obtain `3n + 1`. Repeat the process which has been called `"Half Or Triple Plus One"` indefinitely. The conjecture is that no matter what number you start with, you will always eventually reach `1`. For example, starting with `n = 12`, one gets the sequence `12`, `6`, `3`, `10`, `5`, `16`, `8`, `4`, `2`, `1`. 
-
-```javascript
-// Add your code here...
-
-
-
-
-```
-
-
 /// type=CR, answer=[tests/JavaScriptCertification/PolygonClassTest.js], difficulty=challenging
 
 Write a program that creates a `Polygon` class with constructors that accepts an array of `sides` and a `perimeter()` method that returns the perimeter of a certain polygon.
@@ -331,25 +300,6 @@ Write a program that creates a `Polygon` class with constructors that accepts an
 
 
 
-```
-
-
-/// type=CR, answer=[tests/JavaScriptCertification/CheckArithmeticProgressionTest.js], difficulty=challenging
-
-In mathematics, an arithmetic progression or arithmetic sequence is a sequence of numbers such that the difference between the consecutive terms is constant. For example, the sequence `5`, `7`, `9`, `11`, `13`, `15`, and so on is an arithmetic progression with a common difference of `2`. Write a complete implementation of the `isArithmeticSequence()` function that accepts an array argument `arr`. The `isArithmeticSequence()` function returns a string `An arithmetic sequence.` if a sequence of numbers in `arr` is an arithmetic progression. Otherwise, it returns a string `Not an arithmetic sequence.`.
-
-```javascript
-function isArithmeticSequence(arr)
-{
-  //add your implementation here
-
-
-
-}
-
-my_arr1 = [6, 7, 9, 11];
-
-console.log(isArithmeticSequence(my_arr1));
 ```
 
 
@@ -444,6 +394,48 @@ Given a DOM element on the page, create a function `TraverseElem()` that visits 
 
 
 
+```
+
+
+/// type=CR, answer=[tests/JavaScriptCertification/ConvertTheGivenFunctionsIntoClosureTest.js], difficulty=challenging
+
+Convert the given code snippet into a better representation by using closures.
+
+```
+function greet(message) {
+  console.log(message);
+}
+
+function greeter(name, age) {
+  return "Say Hello to " + name + " at " + age + " years old.";
+}
+
+var message = greeter("Anna", 18);
+greet(message);
+```
+
+```javascript
+// Add your code here...
+
+
+
+
+```
+
+
+/// type=CR, answer=[tests/JavaScriptCertification/CheckBracketBalanceTest.js], difficulty=challenging
+
+Implement the `checkBracketBalance()` function to take a string containing only curly `{}`, square `[]`, and round `()` brackets. The function should tell us if all the brackets in the string are balanced. This means that every opening bracket will have a closing one. For example, `{[]}` is balanced, but `{[}]` is not. The `checkBracketBalance()` function returns `true` if the brackets are balance and `false` otherwise.
+
+```javascript
+function checkBracketBalance(str) {
+// Add your code here...
+
+
+}
+console.log(checkBracketBalance("{[]()}" )); // true
+console.log(checkBracketBalance("{[(])}")); // false
+console.log(checkBracketBalance("{[}")); // false
 ```
 
 +++
