@@ -199,22 +199,6 @@ Write a code that retrieves and changes the inner HTML of an element in JavaScri
 ```
 
 
-/// type=CR, answer=[tests/JavaScriptCertification/CheckValidEmailPatternTest.js], difficulty=easy
-
-Write a program that checks whether the pattern of an e-mail address matches the specified format. The information should contain the following ASCII characters.
- - Uppercase `A-Z` and lowercase `a-z` letters.
- - Digits `0-9`.
- - Characters `! # $ % & ' * + - / = ? ^ _ ` { | } ~`
- - Character `.` period, dot, or fullstop provided that it is not the first or last character and it does not come one after the other.
-
-```javascript
-// Add your code here...
-
-
-
-```
-
-
 :::
 
 /// type=REPL, readonly=true
@@ -367,19 +351,6 @@ What is the output of the given code?
  - It produces an error.
 
 :::
-
-
-/// type=CR, answer=[tests/JavaScriptCertification/IsPalindromeTest.js], difficulty=easy
-
-The `isPalindrome()` function should return `true` if the given string `str` is a palindrome; otherwise, it returns `false`. Implement the `isPalindrome()` function in less than 100 characters.
-
-```JavaScript
-function isPalindrome(str) {
-// your implementation here in less than 100 characters
-
-}
-console.log(isPalindrome("civic")); 
-```
 
 
 /// type=MS, answer=[4,5], difficulty=easy
@@ -953,6 +924,201 @@ let dog = {
 let sayName = dog.sayName;
 sayName();
 ```
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+}
+
+const member = new Person('John');
+console.log(typeof member);
+```
+/// type=SS, answer=[3], difficulty=easy
+
+What is the output of the given code?
+
+ - It prints `class`.
+
+ - It prints `string`.
+
+ - It prints `object`.
+
+ - It prints `function`.
+
+ - It produces an error.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+class Person {
+    constructor() {
+        this.name = 'Charles';
+    }
+}
+
+Person = class AnotherPerson {
+    constructor() {
+        this.name = 'William';
+    }
+};
+
+const member = new Person();
+console.log(member.name);
+```
+/// type=SS, answer=[2], difficulty=easy
+
+What is the output of the given code?
+
+ - It prints `Charles`.
+
+ - It prints `William`.
+
+ - It prints `Undefined`.
+
+ - It produces a `TypeError`.
+
+ - It prints `Error: cannot redeclare Person`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+const note = {
+    [Symbol('cat')]: 'meow',
+};
+
+console.log(note);
+console.log(Object.keys(note));
+```
+/// type=SS, answer=[4], difficulty=easy
+
+What is the output of the given code?
+
+ - It prints `{}` and `[]`.
+
+ - It prints `{ cat: "meow" }` and `["cat"]`.
+
+ - It prints `Error: cannot redeclare note`.
+
+ - It prints `{ [Symbol(cat)]: 'meow' }` and `[]`.
+
+ - It prints `{Symbol('cat'): 'meow'}` and `["{Symbol('cat')"]`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+class Animal {
+    constructor() {
+        console.log("I am an animal.");
+    }
+}
+
+class Dog extends Animal {
+    constructor() {
+        console.log("I am a dog.");
+        super();
+    }
+}
+
+const pet = new Dog();
+```
+/// type=SS, answer=[4], difficulty=easy
+
+What is the output of the given code?
+
+ - It prints `I am a dog.`.
+
+ - It prints `I am an animal.`.
+
+ - It prints `Error: cannot redeclare Animal`.
+
+ - It prints `I am a dog.` and `I am an animal.`.
+
+ - It prints `I am an animal.` and `I am a dog.`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+String.prototype.giveJohnPrize = () => {
+  return 'Just give John a prize already!';
+};
+
+const name = 'John';
+
+console.log(name.giveJohnPrize());
+```
+/// type=SS, answer=[5], difficulty=easy
+
+What is the output of the given code?
+
+ - It prints `John`.
+
+ - It prints `undefined`.
+
+ - It produces a `SyntaxError`.
+
+ - It prints `TypeError: not a function`.
+
+ - It prints `Just give John a prize already!`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+const person = {
+    name: 'John',
+    age: 25,
+};
+
+for (const item in person) {
+    console.log(item);
+}
+```
+/// type=SS, answer=[2], difficulty=easy
+
+What is the output of the given code?
+
+ - It prints `John` and `25`.
+
+ - It prints `name` and `age`.
+
+ - It produces a `SyntaxError`.
+
+ - It prints `{ name: "John" }` and `{ age: 25 }`.
+
+ - It prints `["name", "John"]` and `["age", 25]`.
+
+:::
 
 
 +++

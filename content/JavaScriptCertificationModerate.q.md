@@ -912,20 +912,6 @@ Given a non-negative integer `n`, write a program that generates the first `n` r
 ```
 
 
-/// type=CR, answer=[tests/JavaScriptCertification/CalculateGeoSumTest.js], difficulty=moderate
-
-A Geometric series is a series with a constant ratio between successive terms. The first term of the series is denoted by `a` and the common ratio is denoted by `r`. The series looks like this: `a`, `ar`, `ar^2`, `ar^3`, `ar^4`, and so on. Write a program that calculates the sum of a geometric series.
-
-```javascript
-// Add your code here...
-
-
-
-
-```
-
-
-
 :::
 
 /// type=REPL, readonly=true
@@ -1346,5 +1332,74 @@ What is the output of the given code?
  - It generates a `SyntaxError`.
 
 :::
+
+
+/// type=CR, answer=[tests/JavaScriptCertification/CheckValidEmailPatternTest.js], difficulty=moderate
+
+Write a program that checks whether the pattern of an e-mail address matches the specified format. The information should contain the following ASCII characters.
+ - Uppercase `A-Z` and lowercase `a-z` letters.
+ - Digits `0-9`.
+ - Characters `! # $ % & ' * + - / = ? ^ _ ` { | } ~`
+ - Character `.` period, dot, or fullstop provided that it is not the first or last character and it does not come one after the other.
+
+```javascript
+// Add your code here...
+
+
+
+```
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+class Cat {
+    constructor(name) {
+        this.name = name;
+    }
+}
+
+Cat.prototype.meow = function() {
+    console.log(`Meow I am ${this.name}`);
+};
+
+const pet = new Cat('Kity');
+
+pet.meow();
+```
+/// type=SS, answer=[4], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `name`.
+
+ - It prints `Kity`.
+
+ - It prints `undefined`.
+
+ - It prints `Meow I am Kity`.
+
+ - It generates a `SyntaxError`.
+
+:::
+
+
+/// type=CR, answer=[tests/JavaScriptCertification/IsPalindromeTest.js], difficulty=moderate
+
+The `isPalindrome()` function should return `true` if the given string `str` is a palindrome; otherwise, it returns `false`. Implement the `isPalindrome()` function in less than 100 characters.
+
+```JavaScript
+function isPalindrome(str) {
+// your implementation here in less than 100 characters
+
+
+
+}
+
+console.log(isPalindrome("civic")); 
+```
+
 
 +++
