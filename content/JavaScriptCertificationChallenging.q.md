@@ -432,10 +432,37 @@ function checkBracketBalance(str) {
 // Add your code here...
 
 
+
 }
 console.log(checkBracketBalance("{[]()}" )); // true
 console.log(checkBracketBalance("{[(])}")); // false
 console.log(checkBracketBalance("{[}")); // false
+```
+
+
+/// type=CR, answer=[tests/JavaScriptCertification/ConvertCodeToClosureTest.js], difficulty=challenging
+
+Convert the given function into a better representation using a closure. 
+
+```
+function greet(message) {
+    console.log(message);
+}
+
+function greeter(name, age) {
+    return name + " says Hey!! She is " + age + " years old";
+}
+
+var message = greeter("Anna", 25);
+greet(message);
+```
+
+```JavaScript
+// write your code here...
+
+
+
+
 ```
 
 +++

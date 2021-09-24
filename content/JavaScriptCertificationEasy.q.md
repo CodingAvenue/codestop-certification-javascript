@@ -1121,4 +1121,36 @@ What is the output of the given code?
 :::
 
 
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+var car = new Vehicle("Toyota", "Grey", "2020", "Japan");
+console.log(car);
+
+function Vehicle(model, color, year, country) {
+    this.model = model;
+    this.color = color;
+    this.year = year;
+    this.country = country;
+}
+```
+/// type=SS, answer=[5], difficulty=easy
+
+What is the output of the given code?
+
+ - It prints `null`.
+
+ - It prints `undefined`.
+
+ - It produces a `SyntaxError`.
+
+ - It prints `TypeError: Vehicle not a function`.
+
+ - It prints `Vehicle { model: 'Toyota', color: 'Grey', year: '2020', country: 'Japan' }`.
+
+:::
+
+
 +++

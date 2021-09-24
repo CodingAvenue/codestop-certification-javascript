@@ -202,21 +202,21 @@ Write a program that converts an object into a list of `[key, value]` pairs.
 /// type=REPL, readonly=true
 
 ```javascript
-const squareObj = new Square(10);
-console.log(squareObj.area);
+const circleObj = new Circle(10);
+console.log(circleObj.area);
 
-class Square {
-  constructor(length) {
-    this.length = length;
-  }
+class Circle {
+    constructor(length) {
+        this.length = length;
+    }
 
-  get area() {
-    return this.length * this.length;
-  }
+    get area() {
+        return this.length * this.length;
+    }
 
-  set area(value) {
-    this.area = value;
-  }
+    set area(value) {
+        this.area = value;
+    }
 }
 ```
 /// type=SS, answer=[5], difficulty=moderate
@@ -1401,5 +1401,331 @@ function isPalindrome(str) {
 console.log(isPalindrome("civic")); 
 ```
 
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+(function() {
+    'use strict';
+
+    var person = {
+        name: 'Cathy'
+    };
+    person.salary = '15000';
+    person['country'] = 'Philippines';
+
+    Object.defineProperty(person, 'phoneNo', {
+    value: '00000000',
+    enumerable: true
+    })
+
+    console.log(Object.keys(person)); 
+})();
+```
+/// type=SS, answer=[5], difficulty=moderate
+
+What is the output of the given code?
+
+ - It generates a `TypeError`.
+
+ - It generates a `SyntaxError`.
+
+ - It prints `[ 'name', 'salary' ]`.
+
+ - It prints `[ 'name', 'salary', 'country' ]`.
+
+ - It prints `[ 'name', 'salary', 'country', 'phoneNo' ]`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+(function() {
+    'use strict';
+
+    var person = {
+        name: 'Cathy'
+    };
+    person.salary = '15000';
+    person['country'] = 'Philippines';
+
+    Object.defineProperty(person, 'phoneNo', {
+    value: '00000000',
+    enumerable: false
+    })
+
+    console.log(Object.keys(person)); 
+})();
+```
+/// type=SS, answer=[4], difficulty=moderate
+
+What is the output of the given code?
+
+ - It generates a `TypeError`.
+
+ - It generates a `SyntaxError`.
+
+ - It prints `[ 'name', 'salary' ]`.
+
+ - It prints `[ 'name', 'salary', 'country' ]`.
+
+ - It prints `[ 'name', 'salary', 'country', 'phoneNo' ]`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+(function(){
+    var numbers = [2,3,4,8,9,11,13,12,16];
+    var even = numbers.filter(function(element, index){
+        return element % 2 === 0; 
+    });
+    console.log(even);
+
+    var containsDivisibleby3 = numbers.some(function(element, index){
+        return element % 3 === 0;
+    });
+
+    console.log(containsDivisibleby3);	
+})();
+```
+/// type=SS, answer=[2], difficulty=moderate
+
+What is the output of the given code?
+
+ - It generates a `TypeError`.
+
+ - It prints `[ 2, 4, 8, 12, 16 ]` and `true`.
+
+ - It prints `[ 2, 4, 8, 12, 16 ]` and `false`.
+
+ - It prints `[ 2, 4, 8, 12, 16 ]` and `[ 3, 9, 12]`.
+
+ - It prints `[ 2, 4, 8, 12, 16 ]` and `[ 0, 3, 0, 0, 9, 0, 12]`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+(function() {
+    var firstAccount = {
+        name: 'Daniel',
+        amount: 5000,
+        deductAmount: function(amount) {
+            this.amount -= amount;
+            return this.amount;
+        }
+    };
+
+    var secondAccount = {
+        name: 'Daniel',
+        amount: 8000
+    };
+
+    var withdrawAmountBy = function(totalAmount) {
+        return firstAccount.deductAmount.bind(secondAccount, totalAmount);
+    };
+
+    console.log(withdrawAmountBy(500)());
+    console.log(withdrawAmountBy(400)());
+}());
+```
+/// type=SS, answer=[2], difficulty=moderate
+
+What is the output of the given code?
+
+ - It generates a `TypeError`.
+
+ - It prints `7500` and `7100`.
+
+ - It prints `4500` and `4100`.
+
+ - It prints `7500` and `7500`.
+
+ - It prints `undefined` and `undefined`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+(function() {
+    var firstAccount = {
+        name: 'Daniel',
+        amount: 5000,
+        deductAmount: function(amount) {
+            this.amount -= amount;
+            return this.amount;
+        }
+    };
+
+    var secondAccount = {
+        name: 'Daniel',
+        amount: 8000
+    };
+
+    var withdrawAmountBy = function(totalAmount) {
+        return firstAccount.deductAmount.apply(secondAccount, [totalAmount]);
+    };
+
+    console.log(withdrawAmountBy(500));
+    console.log(withdrawAmountBy(400));
+}());
+```
+/// type=SS, answer=[2], difficulty=moderate
+
+What is the output of the given code?
+
+ - It generates a `TypeError`.
+
+ - It prints `7500` and `7100`.
+
+ - It prints `4500` and `4100`.
+
+ - It prints `7500` and `7500`.
+
+ - It prints `undefined` and `undefined`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+function retrieveServerData(url){
+    var name = "Michelle";
+    return {
+        then : function(fn){
+            fn(name);
+        }
+    }
+}
+
+retrieveServerData('www.codestop.io').then(function(name){
+    console.log(name);
+});
+```
+/// type=SS, answer=[1], difficulty=moderate
+
+What is the output of the given code?
+
+ - It prints `Michelle`.
+
+ - It prints `undefined`.
+
+ - It generates a `TypeError`.
+
+ - It prints `fn is not defined`.
+
+ - It generates a `Reference Error`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+(function() {
+    var message = 'Welcome Home';
+
+    var toGreet = [].filter.call(message, function(element, index) {
+        return index > 7;
+    });
+
+    console.log(toGreet);
+}());
+```
+/// type=SS, answer=[2], difficulty=moderate
+
+What is the output of the given code?
+
+ - It generates a `SyntaxError`.
+
+ - It prints `[ 'H', 'o', 'm', 'e' ]`.
+
+ - It prints `[ ' ', 'H', 'o', 'm', 'e' ]`.
+
+ - It prints `[ 'e', ' ', 'H', 'o', 'm', 'e' ]`.
+
+ - It prints `[ 'W', 'e', 'l', 'c', 'o', 'm', 'e' ]`.
+
+:::
+
+
+/// type=CR, answer=[tests/JavaScriptCertification/LoopThruAndDisplayJsObjectTest.js], difficulty=moderate
+
+Write a program that loops through and enumerates javascript object. Note: Your code should make sure that the key you get is an actual property of an object and does not come from a prototype.
+
+```JavaScript
+// write your code here...
+
+
+
+
+```
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```javascript
+class Automobile {
+  constructor(name) {
+    this.name = name;
+  }
+
+  start() {
+    console.log(`${this.name} automobile started`);
+    exit;
+  }
+}
+
+class Car extends Automobile {
+  start() {
+    console.log(`${this.name} car started`);
+    super.start();
+  }
+}
+
+const car = new Car('Honda');
+console.log(car.start());
+```
+/// type=SS, answer=[3], difficulty=moderate
+
+What is the output of the given code?
+
+ - It generates a `TypeError`.
+
+ - It prints `Honda car started` and `undefined`.
+
+ - It prints `Honda car started` and `Honda automobile started`.
+
+ - It prints `Honda automobile started` and `Honda car started`.
+
+ - It prints `Honda automobile started` and `Honda automobile started`.
+
+:::
 
 +++
